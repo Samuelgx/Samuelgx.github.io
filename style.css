@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* background-color: #dae6f2; */
+    background-color: #070b0e;
+    padding-top: 130px;
+}
+
+
+.encabezado {
+    display: flex;
+    flex-wrap: wrap;
+    height: 130px;
+    background-color: #283747;
+    border-end-end-radius: 16px;
+    border-end-start-radius: 16px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+h1 {
+    display: flex;
+    order: 2;
+    font-size: 36px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: black;
+    justify-content: center;
+}
+
+.logo1 {
+    display: flex;
+    flex-wrap: wrap;
+    order: 1;
+    border-radius: 50%;
+    width: 80px;
+    margin-left: 15px;
+    transition: 1.4s;
+}
+
+.logo1:hover {
+    transform: rotateY(360deg);
+    transition: 1.4s;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    order: 3;
+    margin-right: 20px;
+}
+
+.navegacion {
+
+    display: flex;
+    text-decoration: none;
+    color: #283747;
+    width: 800px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    transition: 0.6s;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+a {
+    display: flex;
+    flex-grow: 1px;
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+
+.navegacion a:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+    transition: 0.6s;
+    background-color: #485a6d;
+}
+
+.navegacion a.active {
+    text-decoration: underline;
+    color: #d4e3f3;
+    background-color: #485a6d;
+}
+
+
+.navegacion a:focus {
+    color: #d4e3f3;
+    transition: 0.1s;
+}
+
+/* Inicio */
+
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 20px 40px;
+    align-items: center;
+}
+
+.div1 {
+    grid-column: 1 / 2;
+    margin-left: 80px;
+    background-color: #667788;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px #979ca089;
+}
+
+.yo1 {
+    grid-column: 2 / 3;
+    justify-self: center;
+    margin-top: 10px;
+
+}
+
+
+.div4 {
+    grid-column: span 5 / span 5;
+    grid-row-start: 2;
+    margin: 80px;
+    margin-top: 0px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #283747;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    height: 40px;
+}
+
+
+
+
+p {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    color: #d4e3f3;
+    padding: 10px;
+    margin: 10px;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+
+
+.yo {
+
+    border-radius: 50%;
+    width: 440px;
+    height: auto;
+}
+
+.seccion {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2.7rem;
+    color: #d4e3f3;
+    font-family: "Inter", sans-serif;
+
+}
+
+
+.contenedor-sobremi .texto {
+    background-color: #1f2937;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: left;
+}
+
+.contenedor-sobremi .imagen img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card {
+    background-color: #1f2937;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card p {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+.proyecto {
+    background-color: #1f2937;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: scale(1.05);
+}
+
+.proyecto h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    margin-left: 1.2rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+
+.proyecto a {
+    color: #60a5fa;
+    text-decoration: none;
+    margin-left: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.formulario {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 1rem;
+    border: none;
+    border-radius: 0.75rem;
+    background-color: #1f2937;
+    color: white;
+}
+
+.formulario button {
+    background-color: #3b82f6;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.75rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.formulario button:hover {
+    background-color: #2563eb;
+}
+
+.skills {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    padding: 40px 20px;
+    text-align: center;
+    color: #d4e3f3;
+    border-radius: 20px;
+    width: 80%;
+}
+
+.skills h2 {
+    font-size: 36px;
+    margin-bottom: 60px;
+    font-family: "Inter", sans-serif;
+    color: #d4e3f3;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.skill-card img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    transition: transform 0.4s ease;
+
+}
+
+.skill-card:hover img {
+    transform: scale(1.1);
+}
+
+.skill-card p {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.skill-card p:hover {
+    transform: scale(1.1);
+
+}
+
+
+@media (max-width: 1000px) {
+    .parent {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        column-gap: 0;
+    }
+
+    .div1,
+    .yo1 {
+        grid-column: 1 / -1;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .div4 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin: 20px;
+    }
+
+    .navegacion {
+        display: none;
+    }
+
+    .navegacion a {
+        padding: 8px;
+        font-size: 18px;
+    }
+}
